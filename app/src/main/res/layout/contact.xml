@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="Contact Your Students' Council" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <TextView
+            android:text="To: nsscja@gmail.com"
+            android:textSize="25sp"
+            android:textColor="#777760"
+            android:layout_margin="5dp"
+            android:background="#1c000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/subject"
+            android:hint="Email Subject"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:background="#1c000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/body"
+            android:hint="Email Body"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:background="#1c000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/sendEmail"
+            android:onClick="onClick"
+            android:text="SEND"
+            android:textColor="#ffffff"
+            android:background="#33ccff"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="OR.."
+            android:textSize="35sp"
+            android:textColor="#000000"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#cc000000"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center|top">
+
+            <TextView
+                android:text="telephone: 618-5116 / 978-7881"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:layout_margin="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#cc000000"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:gravity="center|top">
+
+                <ImageView
+                    android:id="@+id/facebook"
+                    android:src="@drawable/facebook"
+                    android:onClick="onClick"
+                    android:layout_margin="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:id="@+id/twitter"
+                    android:src="@drawable/twitter"
+                    android:onClick="onClick"
+                    android:layout_margin="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:id="@+id/instagram"
+                    android:src="@drawable/instagram"
+                    android:onClick="onClick"
+                    android:layout_margin="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:src="@drawable/youtube"
+                    android:onClick="onClick"
+                    android:layout_margin="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

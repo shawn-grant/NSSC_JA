@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc">
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_marginBottom="70dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <include layout="@layout/home"/>
+            <include layout="@layout/articles"/>
+            <include layout="@layout/contact"/>
+        </ViewFlipper>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#9c9c9c"
+        android:layout_margin="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="left|bottom">
+
+        <ImageView
+            android:id="@+id/home"
+            android:src="@drawable/home"
+            android:onClick="onClick"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/articles"
+            android:src="@drawable/articles"
+            android:onClick="onClick"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/report"
+            android:src="@drawable/report"
+            android:onClick="onClick"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</FrameLayout>
