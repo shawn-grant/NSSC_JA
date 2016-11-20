@@ -77,22 +77,6 @@ public class GalleryActivity extends Activity {
     public void LoadImages(){
         flipper.removeAllViews();
 
-        String portfolioPath ="http://nsscja.org/images/portfolio/";
-        Document doc = null;
 
-        try {
-             doc = Jsoup.connect(portfolioPath).get();
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-
-        for (Element file : doc.select("td.right td a")) {
-            if (file.attr("href").endsWith(".jpg") || file.attr("href").endsWith(".jpeg") || file.attr("href").endsWith(".png")) {
-                System.out.println(file.attr("href"));
-                ImageView iv = new ImageView(this);
-                Picasso.with(this).load(portfolioPath + file.attr("href")).into(iv);
-                flipper.addView(iv, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-            }
-        }
     }
 }

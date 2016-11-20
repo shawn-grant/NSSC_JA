@@ -3,5 +3,25 @@
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="president_message">Students’ Council Week is here yet again and it’s another opportunity for us to pause and celebrate this milestone of the 41st year of the movements’ existence. The theme for this year’s SCW is “Positioned for Greatness,” a declaration that is both powerful and prophetic, as this is manifested daily in the lives of students and youth. These individuals have and continue to make stellar contributions in various spheres of life such as academics, sports and volunteerism just to name a few. Zig Ziglar once said, “Man was designed for accomplishment, engineered for success, and endowed with the seeds of greatness”.</string>
+    <string name="about_nssc_1">The National Secondary Students’ Council (NSSC) was established in 1975, through a policy brought before government in 1973. This policy came as a response to the growing demand for effective student representation and the need for students’ involvement in the decision making process of schools at the all levels. As student advocacy saw tremendous growth in Jamaica in the 1970’s, student governance received legitimacy through the Education Act of 1980. </string>
+    <string name="about_nssc_2">The Education Act of 1980 stated that:\n
+        “every public education institution shall have a students’ council, which shall consist of elected representatives of students with at least one staff advisor, elected by students.”
+        \n\n
+        It also outlined that “through the student councils at the secondary and tertiary levels the student shall have the right to –
+        \n\n
+        ‣Democratically elect their representatives;\n
+        ‣Have representation on the board of the institution;\n
+        ‣Meet with the principal, and staff or both, on any matter affecting the students’ interest. </string>
+    <string name="about_nssc_3">The programme was revamped in 2003 under the leadership of the Director of the National Centre for Youth Development and currently represents 165 secondary schools and over 30,000 students. The NSSC continues its representation of Jamaica’s students with the guiding philosophy, “responsible students make the difference”.</string>
+    <string name="mission">Mission: A dynamic core of responsible and well trained students, recognized at all levels of society, empowered and committed to nation building through exemplary leadership and service.</string>
+    <string name="vision">Vision: To advocate for the upholding of the rights and welfare of secondary level students while highlighting their responsibilities; thus creating motivated and empowered students, demonstrating positive values and attitudes thereby contributing to the development of the Jamaican society.</string>
+
+    <string name="obj_1">‣To identify, advance and promote the interest of Students.</string>
+    <string name="obj_2">‣To express the viewpoint of Jamaica’s Secondary School Students, and represent or arrange the representation of any student or group of students before any authority.</string>
+    <string name="obj_3">‣To support students, affiliated student organizations and other appropriate bodies at the Local, National, Regional and International levels.</string>
+    <string name="obj_4">‣To provide students with services and information relevant to their secondary education.</string>
+    <string name="obj_5">‣To promote the active participation of students in matters affecting their interests, by making representations to the powers that be.</string>
+    <string name="obj_6">‣To promote student governance, youth leadership, and the participation of youth in the decision-making process of civil society.</string>
+    <string name="obj_7">‣To develop in students a greater interest in civic, economic, commercial, industrial and cultural affairs.</string>
+
 </resources>
