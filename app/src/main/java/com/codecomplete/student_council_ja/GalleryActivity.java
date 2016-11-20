@@ -16,7 +16,6 @@ import com.squareup.picasso.Picasso;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-
 import java.io.IOException;
 
 public class GalleryActivity extends Activity {
@@ -73,7 +72,7 @@ public class GalleryActivity extends Activity {
                 .build();
     }
 
-
+//yow
 
     public void LoadImages(){
         flipper.removeAllViews();

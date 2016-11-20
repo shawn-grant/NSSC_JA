@@ -28,12 +28,44 @@
             android:layout_width="match_parent"
             android:layout_height="150dp" />
 
-        <TextView
-            android:text="lorem ipsum dolo sit amet"
-            android:textColor="#000000"
-            android:textSize="18sp"
+        <!--PRESIDENT'S MESSAGE-->
+        <LinearLayout
             android:layout_marginTop="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:text="President's Message" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/president_message_img"/>
+                <Button
+                    android:id="@+id/view_pres_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="25sp"
+                    android:background="#33ccff"
+                    android:textColor="#ffffff"
+                    android:text="VIEW MESSAGE"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
     </LinearLayout>
 </LinearLayout>
