@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center|top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ff33"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="ABOUT THE NSSC"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/nssc_logo"/>
+
+        <!--ABOUT NSSC-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#00ff33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--about nssc paragraph 1-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/about_nssc_1"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"
+            android:background="#00ff33"
+            android:text="Read More..."
+            android:id="@+id/about_nssc_show_all"
+            android:onClick="onClick"/>
+
+        </LinearLayout>
+
+
+        <!--MISSION & VISION-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ccff33"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:text="Mission And Vision"/>
+            <!--mission-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/mission"/>
+            <!--vision-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/vision"/>
+        </LinearLayout>
+
+
+        <!--Aim/ Objectives-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ff33"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:text="Aim/ Objectives"/>
+            <!--objective 1-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/obj_1"/>
+            <!--objective 2-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/obj_2"/>
+            <!--objective 3-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/obj_3"/>
+            <!--objective 4-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/obj_4"/>
+            <!--objective 5-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/obj_5"/>
+            <!--objective 6-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/obj_6"/>
+            <!--objective 7-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="#777777"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:text="@string/obj_7"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
