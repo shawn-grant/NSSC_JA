@@ -1,24 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#1c000000">
+    android:background="#ffffff">
 
-        <ViewFlipper
-            android:id="@+id/viewFlipper"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+    <include layout="@layout/home"/>
 
-            <include layout="@layout/home"/>
-            <include layout="@layout/articles"/>
-            <include layout="@layout/contact"/>
-        </ViewFlipper>
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:handle="@+id/nav_handle"
+        android:content="@+id/nav_content">
 
-<ImageView
-    android:id="@+id/gallery"
-    android:layout_gravity="bottom|left"
-    android:src="@drawable/gallery"
-    android:onClick="onClick"
-    android:layout_width="80dp"
-    android:layout_height="80dp" />
+        <ImageView
+            android:id="@+id/nav_handle"
+            android:src="@drawable/button_action"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <include android:id="@+id/nav_content" layout="@layout/nav_content"/>
+    </SlidingDrawer>
+
 </FrameLayout>

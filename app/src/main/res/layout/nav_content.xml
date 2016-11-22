@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#393939"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--ITEM 1 ARTICLES-->
+    <LinearLayout
+        android:id="@+id/goto_articles"
+        android:onClick="onClick"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/button_action_dark_selector"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:text="ARTICLES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="NSSC News Feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--ITEM 2 GALLERY-->
+    <LinearLayout
+        android:id="@+id/goto_gallery"
+        android:onClick="onClick"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/button_action_dark_selector"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:text="GALLERY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="images from NSSC "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--ITEM 3 CONTACT-->
+    <LinearLayout
+        android:id="@+id/goto_contact"
+        android:onClick="onClick"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/button_action_dark_selector"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:text="CONTACT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="make a report to NSSC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--ITEM 4 ABOUT-->
+    <LinearLayout
+        android:id="@+id/goto_about"
+        android:onClick="onClick"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/button_action_dark_selector"/>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:text="ABOUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:text="About Us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="#cc000000"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <ImageView
+            android:src="@drawable/info"
+            android:layout_marginRight="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="Info"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/web"
+            android:layout_marginRight="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="Visit website"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/settings"
+            android:layout_marginRight="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="Settings"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

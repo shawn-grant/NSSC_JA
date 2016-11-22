@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.codecomplete.student_council_ja"
-        minSdkVersion 15
+        minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
