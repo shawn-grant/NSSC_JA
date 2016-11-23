@@ -1,10 +1,8 @@
 package com.codecomplete.student_council_ja;
 
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
@@ -12,11 +10,6 @@ import com.oguzdev.circularfloatingactionmenu.library.FloatingActionButton;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 import com.squareup.picasso.Picasso;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import java.io.IOException;
 
 public class GalleryActivity extends Activity {
 

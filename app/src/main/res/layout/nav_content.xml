@@ -134,49 +134,65 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:background="#cc000000"
-        android:padding="10dp"
-        android:layout_margin="5dp"
-        android:layout_gravity="bottom"
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
-        <ImageView
-            android:src="@drawable/info"
-            android:layout_marginRight="5dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-        <TextView
-            android:text="Info"
-            android:textColor="#ffffff"
-            android:layout_marginRight="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#cc000000"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:src="@drawable/info"
+                android:layout_marginRight="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="Info"
+                android:textColor="#ffffff"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-        <ImageView
-            android:src="@drawable/web"
-            android:layout_marginRight="5dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-        <TextView
-            android:text="Visit website"
-            android:textColor="#ffffff"
-            android:layout_marginRight="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <ImageView
+                android:src="@drawable/resources"
+                android:layout_marginRight="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="Resources"
+                android:textColor="#ffffff"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-        <ImageView
-            android:src="@drawable/settings"
-            android:layout_marginRight="5dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp" />
-        <TextView
-            android:text="Settings"
-            android:textColor="#ffffff"
-            android:layout_marginRight="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+            <ImageView
+                android:src="@drawable/web"
+                android:layout_marginRight="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="Visit website"
+                android:textColor="#ffffff"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/settings"
+                android:layout_marginRight="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:text="Settings"
+                android:textColor="#ffffff"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </LinearLayout>
