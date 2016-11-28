@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
 public class MainActivity extends Activity implements View.OnClickListener{
 
@@ -18,6 +20,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
+        VideoView video = (VideoView)findViewById(R.id.video);
+        String path = "android.resource://" + getPackageName() + "/raw/video1";
+        video.setVideoURI(Uri.parse(path));
+        MediaController mediaController = new MediaController(this);
+        mediaController.setAnchorView(video);
+        video.setMediaController(mediaController);
     }
 
     @Override
