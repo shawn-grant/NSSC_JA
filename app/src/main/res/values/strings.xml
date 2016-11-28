@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">STUDENTS\' COUNCIL</string>
+    <string name="app_name">Students\' Council</string>
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
@@ -24,4 +24,10 @@
     <string name="obj_6">‣To promote student governance, youth leadership, and the participation of youth in the decision-making process of civil society.</string>
     <string name="obj_7">‣To develop in students a greater interest in civic, economic, commercial, industrial and cultural affairs.</string>
 
+    <string-array name="articles_limit">
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+        <item>150</item>
+    </string-array>
 </resources>

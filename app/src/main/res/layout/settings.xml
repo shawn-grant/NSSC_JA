@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:background="#cc000000"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:text="Article Load limit"
+                android:layout_gravity="center|left"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Spinner
+                android:entries="@array/articles_limit"
+                android:layout_gravity="center|right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/load_limit"
+                android:spinnerMode="dropdown" />
+        </FrameLayout>
+
+        <!--Upload Article-->
+        <Button
+            android:id="@+id/upload"
+            android:onClick="onClick"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:text="Upload Article"
+            android:layout_gravity="center"
+            android:background="#869aa1"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    <!--ABOUT APP-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:text="App: "
+            android:layout_gravity="center|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:text="Version: 1.0.0"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/dev"
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:text="Developer: Shawn Grant"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cortechx"
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:text="(Cortechx)"
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#666666"
+                android:textSize="20sp"
+                android:text="Release Date: April..."
+                android:layout_gravity="left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

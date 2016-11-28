@@ -12,6 +12,11 @@
         android:icon="@drawable/resources"/>
 
     <item
+        android:id="@+id/menu_web"
+        android:title="Visit Website"
+        android:icon="@drawable/web"/>
+
+    <item
         android:id="@+id/menu_settings"
         android:title="Settings"
         android:icon="@drawable/settings"/>
