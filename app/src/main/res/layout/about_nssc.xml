@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    tools:context=".AboutActivity">
 
     <LinearLayout
         android:orientation="vertical"
@@ -19,7 +21,6 @@
     <LinearLayout
         android:orientation="vertical"
         android:gravity="center"
-        android:background="#00ff33"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <!--about nssc paragraph 1-->
@@ -38,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:textColor="#000000"
-            android:background="#02ab24"
+            android:background="#1e000000"
             android:text="Read More..."
             android:id="@+id/about_nssc_read_more"
             android:onClick="onClick"/>
@@ -50,37 +51,57 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ccff33"
             android:orientation="vertical">
-            <TextView
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
                 android:background="#000000"
-                android:textColor="#ffffff"
-                android:textSize="30sp"
-                android:text="Mission And Vision"/>
-            <!--mission-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/mission"/>
-            <!--vision-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/vision"/>
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:text="Mission And Vision"/>
+                <ImageView
+                    android:id="@+id/mission_vision_view_more"
+                    android:onClick="onClick"
+                    android:src="@drawable/arrow_down"
+                    android:layout_gravity="center|right"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/mission_vision"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--mission-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/mission"/>
+                <!--vision-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/vision"/>
+            </LinearLayout>
         </LinearLayout>
 
 
@@ -88,87 +109,107 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00ff33"
             android:orientation="vertical">
-            <TextView
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
                 android:background="#000000"
-                android:textColor="#ffffff"
-                android:textSize="30sp"
-                android:text="Aim/ Objectives"/>
-            <!--objective 1-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/obj_1"/>
-            <!--objective 2-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/obj_2"/>
-            <!--objective 3-->
-            <TextView
-                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:text="Aim/ Objectives"/>
+                <ImageView
+                    android:id="@+id/objectives_view_more"
+                    android:onClick="onClick"
+                    android:src="@drawable/arrow_down"
+                    android:layout_gravity="center|right"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/objectives"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/obj_3"/>
-            <!--objective 4-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/obj_4"/>
-            <!--objective 5-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/obj_5"/>
-            <!--objective 6-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/obj_6"/>
-            <!--objective 7-->
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="30dp"
-                android:background="#777777"
-                android:textColor="#ffffff"
-                android:textSize="18sp"
-                android:text="@string/obj_7"/>
+                android:orientation="vertical">
+                <!--objective 1-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/obj_1"/>
+                <!--objective 2-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/obj_2"/>
+                <!--objective 3-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/obj_3"/>
+                <!--objective 4-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/obj_4"/>
+                <!--objective 5-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/obj_5"/>
+                <!--objective 6-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/obj_6"/>
+                <!--objective 7-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#777777"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="@string/obj_7"/>
+                </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
