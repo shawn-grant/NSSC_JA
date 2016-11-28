@@ -5,22 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center|top"
-            android:textSize="30sp"
-            android:gravity="center"
-            android:text="National Secondary Students' Council" />
-
         <LinearLayout
-           android:layout_marginTop="5dp"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="top|center"
@@ -28,7 +13,7 @@
 
             <ImageView
                 android:src="@drawable/home"
-                android:background="#777fc0"
+                android:background="#777777"
                 android:layout_width="match_parent"
                 android:layout_height="150dp" />
 
@@ -39,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
-                android:background="#000000"
+                android:background="#cc000000"
                 android:orientation="vertical">
 
                 <TextView
@@ -75,6 +60,7 @@
                 </LinearLayout>
             </LinearLayout>
 
+
             <!--EXECUTIVE BODY-->
             <LinearLayout
                 android:layout_marginTop="5dp"
@@ -83,7 +69,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_gravity="right"
                 android:gravity="center"
-                android:background="#000000"
+                android:background="#cc000000"
                 android:orientation="vertical">
 
                 <TextView
@@ -185,10 +171,8 @@
                             android:id="@+id/exec_school"/>
                         </LinearLayout>
                 </LinearLayout>
+
             </LinearLayout>
 
-
-
         </LinearLayout>
-    </LinearLayout>
     </ScrollView>
