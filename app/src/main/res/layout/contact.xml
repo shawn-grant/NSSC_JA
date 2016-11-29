@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:gravity="center"
     android:background="#ffffff"
@@ -126,6 +126,13 @@
             </HorizontalScrollView>
 
         </LinearLayout>
+
+
+        <WebView
+            android:id="@+id/mapWebView"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>
